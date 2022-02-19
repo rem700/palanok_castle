@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220216130511">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220219210016">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,9 +56,54 @@
 			<div class="entrance">
 
 				<div class="entrance__container">
-					<div class="entrance__image-ibg">
-						<picture><source srcset="img/palanok.webp" type="image/webp"><img src="img/palanok.png" alt="main_pic"></picture>
-						<!-- <h1 class="entrance__title">Замок "Паланок"</h1> -->
+					<!-- <div class="entrance__image-ibg">
+            <picture><source srcset="img/palanok.webp" type="image/webp"><img src="img/palanok.png" alt="main_pic"></picture>
+        </div> -->
+					<!-- Оболочка слайдера -->
+					<div class="entr-image__slider swiper">
+						<!-- Двигающееся часть слайдера -->
+						<div class="entr-image__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="entr-image__slide swiper-slide">
+								<div class="entrance__image-ibg">
+									<picture><source srcset="img/palanok.webp" type="image/webp"><img src="img/palanok.png" alt="main_pic"></picture>
+								</div>
+							</div>
+							<div class="entr-image__slide swiper-slide">
+								<div class="entrance__image-ibg">
+									<picture><source srcset="img/main.webp" type="image/webp"><img src="img/main.jpg" alt="main_pic"></picture>
+								</div>
+							</div>
+						</div>
+						<!-- Если нужна пагинация -->
+						<div class="swiper-pagination"></div>
+						<!-- Если нужна навигация (влево/вправо) -->
+						<!-- <button type="button" class="swiper-button-prev"></button>
+            <button type="button" class="swiper-button-next"></button> -->
+						<!-- Если нужен скролбар -->
+						<div class="swiper-scrollbar"></div>
+					</div>
+					<div class="entrance__textbar">
+						<!-- Оболочка слайдера -->
+						<div class="entr-text__slider swiper">
+							<!-- Двигающееся часть слайдера -->
+							<div class="entr-text__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<div class="entr-text__slide swiper-slide">
+									<div class="entrance__title">Замок "Паланок"</div>
+								</div>
+								<div class="entr-text__slide swiper-slide">
+									<div class="entrance__title">Незламна цитадель</div>
+								</div>
+							</div>
+							<!-- Если нужна пагинация -->
+							<!-- <div class="swiper-pagination"></div> -->
+							<!-- Если нужна навигация (влево/вправо) -->
+							<!-- <button type="button" class="swiper-button-prev"></button>
+                <button type="button" class="swiper-button-next"></button> -->
+							<!-- Если нужен скролбар -->
+							<!-- <div class="swiper-scrollbar"></div> -->
+						</div>
 					</div>
 				</div>
 			</div>
@@ -120,11 +165,11 @@
 			<section class="expositions">
 				<div class="expositions__container">
 					<div class="expositions__wrapper">
-						<div data-tabs data-tabs-animate class="tabs">
+						<div data-tabs="320" data-tabs-animate class="tabs">
 							<nav data-tabs-titles class="tabs__navigation">
 								<button type="submit" class="tabs__title _tab-active">Експозиції і локації</button>
 								<button type="submit" class="tabs__title">Проекти</button>
-								<button type="submit" class="tabs__title">Послуги та ціни на квитки</button>
+								<!-- <button type="submit" class="tabs__title">Послуги та ціни на квитки</button> -->
 								<button type="submit" class="tabs__title">Правила користування</button>
 							</nav>
 							<div data-tabs-body class="tabs__content">
@@ -320,59 +365,59 @@
 								<div class="tabs__body">
 									2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore odio exercitationem, excepturi similique nulla, voluptatem reprehenderit neque a minima eaque tenetur? Quos fugit voluptate enim quo sed, minima error molestias!
 								</div>
-								<div class="tabs__body">
-									<ul class="price">
-										<li class="price__point">
-											30-50 грн. – повні квитки
-										</li>
-										<li class="price__point">
-											10-30 грн. – пільгові (учні, студенти, пенсіонери)
-										</li>
-										<li class="price__point">
-											100 грн. – вартість екскурсії (для групи до 20 осіб)
-										</li>
-										<li class="price__point">
-											70 грн. – вартість майстер-класів, квестів, тематичних уроків (з особи)
-										</li>
-										<div class="price__exept">
-											Право безкоштовного обслуговування мають <br> (за умови пред'явленням документів,що засвідчують належність до вказаної категорії громадян):
-										</div>
-										<li class="price__point">
-											діти дошкільного віку (до 7 років);
-										</li>
-										<li class="price__point">
-											особи з інвалідністю та супроводжуючі їх особи;
-										</li>
-										<li class="price__point">
-											особи, які отримали статус постраждалого учасника Революції Гідності;
-										</li>
-										<li class="price__point">
-											військовослужбовці строкової служби;
-										</li>
-										<li class="price__point">
-											учасники бойових дій;
-										</li>
-										<li class="price__point">
-											члени сім’ї загиблого (померлого) учасника бойових дій АТО/ООС;
-										</li>
-										<li class="price__point">
-											громадяни, які постраждали внаслідок Чорнобильської катастрофи;
-										</li>
-										<li class="price__point">
-											діти з багатодітних сімей, діти-сироти та діти, які позбавлені батьківського піклування;
-										</li>
-										<li class="price__point">
-											працівники музеїв та закладів музейного типу України;
-										</li>
-										<li class="price__point">
-											члени Міжнародної ради музеїв (ICOM);
-										</li>
-										<li class="price__point">
-											викладачі і студенти вузів профільних спеціальностей (історики, музеєзнавці, мистецтвознавці, реставратори);
-										</li>
-									</ul>
-
-								</div>
+								<!-- <div class="tabs__body">
+                        <ul class="price">
+                            <li class="price__point">
+                                30-50 грн. – повні квитки
+                            </li>
+                            <li class="price__point">
+                                10-30 грн. – пільгові (учні, студенти, пенсіонери)
+                            </li>
+                            <li class="price__point">
+                                100 грн. – вартість екскурсії (для групи до 20 осіб)
+                            </li>
+                            <li class="price__point">
+                                70 грн. – вартість майстер-класів, квестів, тематичних уроків (з особи)
+                            </li>
+                            <div class="price__exept">
+                                Право безкоштовного обслуговування мають <br> (за умови пред'явленням документів,що засвідчують належність до вказаної категорії громадян):
+                            </div>
+                            <li class="price__point">
+                                діти дошкільного віку (до 7 років);
+                            </li>
+                            <li class="price__point">
+                                особи з інвалідністю та супроводжуючі їх особи;
+                            </li>
+                            <li class="price__point">
+                                особи, які отримали статус постраждалого учасника Революції Гідності;
+                            </li>
+                            <li class="price__point">
+                                військовослужбовці строкової служби;
+                            </li>
+                            <li class="price__point">
+                                учасники бойових дій;
+                            </li>
+                            <li class="price__point">
+                                члени сім’ї загиблого (померлого) учасника бойових дій АТО/ООС;
+                            </li>
+                            <li class="price__point">
+                                громадяни, які постраждали внаслідок Чорнобильської катастрофи;
+                            </li>
+                            <li class="price__point">
+                                діти з багатодітних сімей, діти-сироти та діти, які позбавлені батьківського піклування;
+                            </li>
+                            <li class="price__point">
+                                працівники музеїв та закладів музейного типу України;
+                            </li>
+                            <li class="price__point">
+                                члени Міжнародної ради музеїв (ICOM);
+                            </li>
+                            <li class="price__point">
+                                викладачі і студенти вузів профільних спеціальностей (історики, музеєзнавці,   мистецтвознавці, реставратори);
+                            </li>
+                        </ul>
+                        
+                    </div> -->
 								<div class="tabs__body">
 
 								</div>
@@ -542,7 +587,7 @@
 								та послуги:
 							</div>
 							<div class="info__text">
-								<a href="#">Ціни на квитки
+								<a href="#">Ціни на квитки <br>
 									та послуги</a>
 							</div>
 						</div>
@@ -588,7 +633,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20220216130511"></script>
+	<script src="js/app.min.js?_v=20220219210016"></script>
 </body>
 
 </html>
