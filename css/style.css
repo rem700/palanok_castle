@@ -153,10 +153,6 @@ h6 {
   height: 80%;
   width: 100%;
 }
-.history {
-  position: relative;
-  z-index: 2;
-}
 .history__container {
   padding: 7.1428571429em 0;
   background-color: white;
